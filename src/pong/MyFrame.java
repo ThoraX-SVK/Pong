@@ -12,6 +12,7 @@ public class MyFrame extends Frame{
         this.setSize(800, 600);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+        this.setVisible(true);
         
         addWindowListener(new WindowAdapter ()
                                 {   public void windowClosing(WindowEvent e) {
@@ -24,7 +25,6 @@ public class MyFrame extends Frame{
         GD = new GameDraw(this);
         this.add(GD);
         
-        this.setVisible(true);
     }
     
 }
