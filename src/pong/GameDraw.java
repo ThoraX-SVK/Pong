@@ -1,6 +1,5 @@
 package pong;
 
-import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -9,14 +8,14 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class GameDraw extends DoubleBuffer implements KeyListener{
-    MyFrame parrentFrame;
+    MyFrame myFrame;
     Pad player1pad;
     Pad player2pad;
     Arena arena;
     Ball ball;
 
     public GameDraw(MyFrame F) {
-        this.parrentFrame = F;
+        this.myFrame = F;
         this.setBackground(Color.BLACK);
         this.addKeyListener(this);
         
